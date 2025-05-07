@@ -17,7 +17,7 @@ WriteLine($"e / f = {e / f}");
 WriteLine($"e % f = {e % f}");
 
 double g = 11.0;
-WriteLine($"g is {g:N1}, f is {f}");
+WriteLine($"g is {g:N4}, f is {f}");
 WriteLine($"g / f = {g / f}");
 
 int p = 6;
@@ -25,5 +25,21 @@ p += 3; // Equivalent to: p = p + 3;
 p -= 3; // Equivalent to: p = p - 3;
 p *= 3; // Equivalent to: p = p * 3;
 p /= 3; // Equivalent to: p = p / 3;
+
+WriteLine();
+
+int x = 5;
+int postfixIncrement = x++;
+int prefixIncrement = ++x;
+Type theTypeOfAnInteger = typeof(int);
+string nameOfVariable = nameof(x);
+int howManyBytesInAnInteger = sizeof(int);
+
+WriteLine($"postfixIncrement is {postfixIncrement}");
+WriteLine($"prefixIncrement is {prefixIncrement}");
+WriteLine($"The type of an integer is {theTypeOfAnInteger}");
+WriteLine($"The name of the variable is {nameOfVariable}");
+WriteLine($"An integer takes {howManyBytesInAnInteger} bytes in memory");
+
 #endregion
 
